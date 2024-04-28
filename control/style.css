@@ -230,9 +230,9 @@ i {
   margin-top: -0.8em;
 }
 
-.alur {
-  color: #fff;
-  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
+#alur {
+  color: #ffffff;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .img-alur img {
@@ -240,8 +240,8 @@ i {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.teks-judul, .teks-title {
-  text-shadow: 2px 3px 3px rgba(111, 111, 111, 0.5);
+.header span {
+  text-shadow: 3px 3px 4px var(--text-primary);
 }
 
 .card {

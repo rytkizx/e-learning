@@ -4,10 +4,17 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8">
-  <title>E-Learning</title>
+  <title>CodeSavvy</title>
   <script defer src="control/theme2.js"></script>
   <link rel="stylesheet" href="control/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- link font akhir -->
 
   <!-- link bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +27,10 @@
   <!-- link icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- link icon akhir -->
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- aos AKHIR -->
 
 </head>
 
@@ -79,7 +90,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link d-flex align-items-center">
+        <a href="view/latihan.html" class="nav-link d-flex align-items-center">
           <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="space-station-moon-alt" role="img"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
             class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x">
@@ -116,29 +127,6 @@
 
       <li class="nav-item" id="themeButton">
         <a href="#" class="nav-link d-flex align-items-center d-flex">
-          <!-- <svg class="theme-icon" id="lightIcon" aria-hidden="true" focusable="false" data-prefix="fad"
-            data-icon="moon-stars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-            class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x">
-            <g class="fa-group">
-              <path fill="currentColor"
-                d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
-                class="fa-secondary"></path>
-              <path fill="currentColor"
-                d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
-                class="fa-primary"></path>
-            </g>
-          </svg>
-          <svg class="theme-icon" id="solarIcon" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="sun"
-            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-            class="svg-inline--fa fa-sun fa-w-16 fa-7x">
-            <g class="fa-group">
-              <path fill="currentColor"
-                d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
-                class="fa-secondary"></path>
-              <path fill="currentColor" d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z" class="fa-primary">
-              </path>
-            </g>
-          </svg> -->
           <!-- icon boostrap -->
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
             class="bi bi-lightbulb-fill fa-primary theme-icon" viewBox="0 0 16 16" id="lightIcon">
@@ -162,24 +150,28 @@
   <!-- header -->
   <div class="header">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col text-center" id="logo-img"><img src="img/logo unesa png baru.png" alt="logo-unesa" class="mt-2">
-          <img src="img/KTP PNG.png" alt="logo-tp" class="ms-3">
-        </div>
-      </div>
-      <div class="row justify-content-center mt-5">
+      <div class="row teks">
         <div class="col-sm" id="text-header">
-          <p class="fw-bold fs-1">SELAMAT DATANG <br> DI E-LEARNING <span class="text-title">CODECRAFT</span>!</p>
-          <div class="col d-flex position-absolute bg-danger" id="ornament"> tes</div>
-          <div class="col-sm-5">
-            <p class="fs-5" id="explain">Kembangkan keterampilan pemrograman dasar Anda dengan cara yang kreatif dan
+          <p class="teks-judul" data-aos="fade-right" data-aos-duration="1400">SELAMAT DATANG <br> DI E-LEARNING <span
+              class="text-title text-uppercase">codesavvy</span>!</p>
+          <img class="d-flex position-absolute" id="ornament" src="img/ornament.svg" alt="ornament" data-aos="fade-left"
+            data-aos-duration="2000">
+
+          <div class="col-md-5">
+            <p class="teks-narasi" data-aos="fade-right" data-aos-duration="1500">Kembangkan keterampilan pemrograman
+              dasar Anda dengan cara yang kreatif dan
               menyenangkan melalui platform
-              pembelajaran ini. CodeCraft adalah tempat di mana Anda bisa menjelajahi dunia pemrograman menggunakan
+              pembelajaran ini. CodeSavvy adalah tempat di mana Anda bisa menjelajahi dunia pemrograman menggunakan
               Scratch, alat pemrograman visual yang ramah bagi pemula, sambil membangun fondasi yang kokoh dalam logika
               pemrograman.</p>
           </div>
-          <div class="col">
-            <p class="fs-1">pendaftaran</p>
+          <div class="col mt-4">
+            <a href="#main" class="text-decoration-none">
+              <p class="teks-button text-capitalize text-center rounded-5" data-aos="fade-up" data-aos-duration="2000">
+                next <i class="bi bi-caret-down-fill"></i>
+              </p>
+            </a>
+
           </div>
         </div>
       </div>
@@ -188,16 +180,103 @@
   <!-- akhir header -->
 
   <!-- main -->
-  <div class="main">
+  <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="" fill-opacity="1"
+      d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,192C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+    </path>
+  </svg>
+  <section class="main pt-4" id="main">
+    <div class="main">
+      <div class="row-main">
+        <div class="col text-center teks-judul text-capitalize alur" data-aos="fade-right" data-aos-duration="2000">alur
+          belajar</div>
+        <div class="col img-alur text-center pt-3" data-aos="fade-up" data-aos-duration="2000"><img
+            src="img/alur-belajar.svg" alt="alur-belajar"></div>
 
-  </div>
+        <div class="container ">
+          <div class="row mt-5 gy-4 mb-4">
+            <div class="col-md">
+              <div class="card rounded-4 h-100" data-aos="fade-right" data-aos-duration="2000">
+                <div class="card-body rounded-4 h-100">
+                  <h5 class="card-title text-capitalize fs-3 fw-bold text-primary">e-learning codecraft</h5>
+                  <p class="card-text">CodeCraft menggunakan Scratch, alat pemrograman visual untuk pemula, dan
+                    menyediakan materi pembelajaran untuk membangun dasar logika pemrograman dengan cara yang
+                    menyenangkan dan mudah dimengerti.
+                  </p>
+                  <a href="#" class="text-decoration-none">
+                    <div class="card-link text-uppercase fw-bold">baca selengkapnya <i
+                        class="bi bi-arrow-right-short fs-6"></i></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md" data-aos="fade-up" data-aos-duration="2000">
+              <div class="card rounded-4 h-100">
+                <div class="card-body rounded-4 h-100">
+                  <h5 class="card-title text-capitalize fs-3 fw-bold text-danger">pemrograman dasar</h5>
+                  <p class="card-text">Pemrograman dasar mengacu pada seperangkat konsep, prinsip, dan teknik yang
+                    menjadi dasar pengembangan perangkat lunak.
+                  </p>
+                  <a href="#" class="text-decoration-none">
+                    <div class="card-link text-uppercase fw-bold">baca selengkapnya <i
+                        class="bi bi-arrow-right-short fs-6"></i></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md" data-aos="fade-left" data-aos-duration="2000">
+              <div class="card rounded-4 h-100">
+                <div class="card-body rounded-4 h-100">
+                  <h5 class="card-title text-capitalize fs-3 fw-bold text-warning">scratch</h5>
+                  <p class="card-text">Scratch merupakan bahasa pemrograman yang dikembangkan oleh MIT (Massachusetts
+                    Institute of Technology). Dengan keunggulan sebagai bahasa pemrograman grafis, Scratch membantu
+                    untuk membuat game komputer, cerita animasi, atau simulasi ilmiah dengan mudah. </p>
+                  <a href="#" class="text-decoration-none">
+                    <div class="card-link text-uppercase fw-bold">baca selengkapnya <i
+                        class="bi bi-arrow-right-short fs-6"></i></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- akhir main -->
 
   <!-- footer -->
   <div class="footer">
-
+    <div class="card text-end">
+      <div class="card-body">
+        <h5 class="card-title">Yash Akbar Raihan</h5>
+        <p class="card-text">Teknologi Pendidikan | Universitas Negeri Surabaya</p>
+        <p class="teks-dua">@2024</p>
+        <a href="#"><i class="bi bi-github pe-3"></i></a>
+        <a href="#"><i class="bi bi-linkedin pe-3"></i></a>
+        <a href=""><i class="bi bi-whatsapp pe-3"></i></a>
+        <a href="#"><i class="bi bi-envelope"></i></a>
+        <div class="col text-start d-flex position-absolute" id="alamat">
+          <p>Jl. Raya Kampus Unesa, <br> Lidah Wetan, Kec. Lakarsantri, Surabaya, <br> Jawa Timur 60213</p>
+        </div>
+      </div>
+      <div class="row-footer">
+        <div class="bg-logo d-flex position-absolute rounded-end-5"></div>
+        <div class="col d-flex position-absolute" id="logo"><img src="img/logo unesa png baru.png" alt="logo-unesa">
+          <img class="ms-2" src="img/KTP PNG.png" alt="logo-ktp">
+        </div>
+      </div>
+    </div>
   </div>
   <!-- akhir footer -->
+
+  <!-- js aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- js aos akhir -->
 </body>
 
 </html>

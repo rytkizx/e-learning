@@ -24,7 +24,7 @@
     <nav class="navbar fixed-bottom">
         <ul class="navbar-nav d-flex align-items-center list-unstyled flex-sm-column flex-row">
             <li class="logo text-center fw-bold">
-                <a href="../index.html" class="nav-link d-flex align-items-center d-flex">
+                <a href="/index.html" class="nav-link d-flex align-items-center d-flex">
                     <span class="link-text logo-text d-inline position-absolute">E-Learn</span>
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right"
                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
@@ -60,7 +60,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="materi.html" class="nav-link d-flex align-items-center">
+                <a href="../materi/materi.html" class="nav-link d-flex align-items-center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="alien-monster" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
                         class="svg-inline--fa fa-alien-monster fa-w-18 fa-9x">
@@ -77,7 +77,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link d-flex align-items-center">
+                <a href="../latihan/latihan.html" class="nav-link d-flex align-items-center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="space-station-moon-alt"
                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                         class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x">
@@ -114,29 +114,19 @@
 
             <li class="nav-item" id="themeButton">
                 <a href="#" class="nav-link d-flex align-items-center d-flex">
-                    <svg class="theme-icon" id="lightIcon" aria-hidden="true" focusable="false" data-prefix="fad"
-                        data-icon="moon-stars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x">
-                        <g class="fa-group">
-                            <path fill="currentColor"
-                                d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
-                                class="fa-secondary"></path>
-                            <path fill="currentColor"
-                                d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
-                                class="fa-primary"></path>
-                        </g>
+
+                    <!-- icon boostrap -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+                        class="bi bi-lightbulb-fill fa-primary theme-icon" viewBox="0 0 16 16" id="lightIcon">
+                        <path
+                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
                     </svg>
-                    <svg class="theme-icon" id="solarIcon" aria-hidden="true" focusable="false" data-prefix="fad"
-                        data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-sun fa-w-16 fa-7x">
-                        <g class="fa-group">
-                            <path fill="currentColor"
-                                d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
-                                class="fa-secondary"></path>
-                            <path fill="currentColor" d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
-                                class="fa-primary">
-                            </path>
-                        </g>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+                        class="bi bi-cloud-fill fa-secondary theme-icon" viewBox="0 0 16 16" id="solarIcon">
+                        <path
+                            d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383" />
                     </svg>
                     <span class="link-text sm-d-none">Theme</span>
                 </a>
@@ -150,13 +140,33 @@
 
     </div>
     <!-- header akhir -->
+
     <!--  Main Content -->
-    <div style="width: 100%;" class="quiz">
-        <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe
-                title="Basic shapes quiz" frameborder="0" width="1200" height="675"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                src="https://view.genial.ly/660cf247e1c8f100152978a6" type="text/html" allowscriptaccess="always"
-                allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="teks-judul text-capitalize ms-5">
+                    petunjuk penggunaan
+                </p>
+                <p class="teks-narasi">- disarankan menggunakan mode fullscreen</p>
+                <p class="teks-narasi">- disarankan menggunakan mode fullscreen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div style="width: 100%;" class="quiz">
+                    <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe
+                            title="Basic shapes quiz" frameborder="0" width="1200" height="675"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            src="https://view.genial.ly/660cf247e1c8f100152978a6" type="text/html"
+                            allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+                            allownetworking="all"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--  Main Content -->

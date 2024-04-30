@@ -11,7 +11,7 @@
 /* Header */
 .header img {
   height: 65%;
-  right: 3em;
+  right: 2em;
   top: 7em;
 }
 
@@ -202,8 +202,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #logo {
-  top: 0.8em;
-  margin-left: 1.4em;
+  top: 1.35em;
+  margin-left: 1em;
 }
 
 #logo img {
@@ -215,15 +215,11 @@ i {
   color: #000000;
 }
 
-.row-footer {
-  overflow: hidden;
-}
-
 .bg-logo {
   background-color: #fff;
-  width: 12.6em;
+  width: 12em;
   height: 3em;
-  top: 0.45em;
+  top: 1em;
 }
 
 .teks-dua {
@@ -276,11 +272,19 @@ i {
   }
 
   .logo {
-    display: none;
+    position: relative;
+    top: 50%;
+    background:none;
+    width: 15%;
   }
 
   .navbar-nav {
     flex-direction: row;
+    width: auto;
+  }
+
+  .nav-item {
+    scale: 85%;
   }
 
   .nav-link {
@@ -308,14 +312,6 @@ i {
 
   .bg-logo {
     width: 7.5em;
-  }
-
-  .nav-item {
-    scale: 85%;
-  }
-
-  .navbar-nav {
-    width: 100%;
   }
 
   .card, .card-title {
@@ -362,7 +358,7 @@ scale: 90%;
   }
 
   .header {
-    height: 100vh;
+    height: auto;
   }
 }
 

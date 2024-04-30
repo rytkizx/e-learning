@@ -134,9 +134,27 @@
     position: absolute;
     align-items: center;
   }
+
+  .teks-judul {
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .teks-narasi {
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
   
   /* Small screens */
   @media only screen and (max-width: 576px) {
+    
+    /* navbar */
     .navbar {
       bottom: 0;
       width: 100vw;
@@ -144,18 +162,33 @@
     }
   
     .logo {
-      display: none;
+      position: relative;
+      top: 50%;
+      background:none;
+      width: 15%
     }
   
     .navbar-nav {
       flex-direction: row;
+      width: 80%;
+    }
+
+    .nav-item {
+      scale: 85%;
     }
   
     .nav-link {
       justify-content: center;
       margin-top: -1.5em;
     }
-  
+    
+  /* akhir navbar */
+
+/* header */
+
+/* header akhir */
+
+  /* main */
     main {
       margin: 0;
     }
@@ -169,6 +202,9 @@
     #themeButton .link-text {
       display: none;
     }
+/* main akhir */
+
+
   }
   
   /* Large screens */
@@ -177,6 +213,10 @@
       top: 0;
       width: 5rem;
       height: 100vh;
+    }
+  
+    .quiz {
+margin-left: 2.5em;
     }
 
     .navbar:hover {
@@ -196,8 +236,14 @@
     {
       left: 0px;
     }
-  }
+
+    /* main */
+    .teks-narasi {
+      margin-left: 4em;
+    }
+    /* main akhir */
   
+  }
   
   .light {
     --text-primary: #1f1f1f;
@@ -216,8 +262,7 @@
   .theme-icon {
     display: none;
   }
-  
-  
+ 
   .light #lightIcon {
     display: block;
   }

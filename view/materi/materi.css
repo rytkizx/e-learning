@@ -126,17 +126,64 @@
     margin-top: 0.5em;
     text-transform: uppercase;
   }
-  
-  #logo-unesa {
-    height: 1px;
-    width: 1px;
-    display: flex;
-    position: absolute;
-    align-items: center;
+
+  .teks-judul {
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
   }
-  
+
+  .teks-narasi {
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* header */
+  .header {
+    height: 30vh;
+    background: linear-gradient(to bottom, #40A2E3, rgba(255, 255, 255, 0));
+  }
+  /* header akhir */
+
+  /* main */
+.main {
+  background-color: var(--bg-primary);
+  height: auto;
+}
+  /* main akhir */
+
+  /* footer */
+  #logo img {
+    width: 2.2em;
+  }
+  #logo {
+    top: 1.35em;
+    margin-left: 6em;
+  }
+  .bg-logo {
+    background-color: #fff;
+    width: 12em;
+    height: 3em;
+    top: 1em;
+  }
+  .footer .card-body {
+    background: linear-gradient(to right, var(--bg-secondary), var(--bg-primary));
+  }
+
+  .footer .bi {
+    color: #000000;
+    font-size: 2em;
+  }
+  /* akhir footer */
+
   /* Small screens */
   @media only screen and (max-width: 576px) {
+
+    /* navbar */
     .navbar {
       bottom: 0;
       width: 100vw;
@@ -144,18 +191,28 @@
     }
   
     .logo {
-      display: none;
+      position: relative;
+      top: 50%;
+      background:none;
+      width: 15%
     }
   
     .navbar-nav {
       flex-direction: row;
+      width: 80%;
     }
   
+    .nav-item {
+      scale: 85%;
+    }
+
     .nav-link {
       justify-content: center;
       margin-top: -1.5em;
     }
-  
+  /* akhir navbar */
+
+  /* main */
     main {
       margin: 0;
     }
@@ -169,6 +226,28 @@
     #themeButton .link-text {
       display: none;
     }
+
+    .teks-judul, .teks-narasi {
+      padding: 0px 5px 0px 5px;
+    }
+/* akhir main */
+    /* footer */
+    .bg-logo {
+      width: 7.5em;
+    }
+#logo {
+  margin-left: 1.5em;
+}
+.footer .card {
+  font-size: smaller;
+}
+.footer .card-body {
+  margin-bottom: 6em;
+}
+/* akhir footer */
+* {
+  font-size: small;
+}
   }
   
   /* Large screens */
@@ -177,11 +256,6 @@
       top: 0;
       width: 5rem;
       height: 100vh;
-    }
-  
-    .quiz {
-margin-left: 2.5em;
-scale: 90%;
     }
 
     .navbar:hover {
@@ -201,12 +275,11 @@ scale: 90%;
     {
       left: 0px;
     }
-  
-    .col {
-      margin-left: 4.3rem;
+    .row .col {
+      margin-left: 5em;
     }
-  
   }
+  
   
   .light {
     --text-primary: #1f1f1f;
@@ -225,7 +298,8 @@ scale: 90%;
   .theme-icon {
     display: none;
   }
- 
+  
+  
   .light #lightIcon {
     display: block;
   }

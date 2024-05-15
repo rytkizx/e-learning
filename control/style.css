@@ -275,6 +275,7 @@ i {
 #judul-profil {
   text-shadow: 2px 3px 3px #000000;
   color: #40a2e3;
+  font-size: 2.5em;
 }
 
 .up-main {
@@ -283,6 +284,14 @@ i {
 
 #teks-tujuan {
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.profil .keterangan li {
+  padding-bottom: 10px;
+}
+
+.profil img {
+  width: 100%;
 }
 /* main akhir */
 
@@ -387,6 +396,11 @@ i {
   .up-main {
     height: auto;
   }
+
+  .profil .gambar-project {
+    display: none;
+  }
+  /* akhir main */
 }
 
 /* Medium screens */

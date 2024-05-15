@@ -8,9 +8,6 @@
     --transition-speed: 600ms;
   }
   
-  .header img {
-    height: 3.5em;
-  }
   
   body {
     color: rgb(0, 0, 0);
@@ -152,15 +149,49 @@
   }
 
   /* header */
-
+.header {
+  background: linear-gradient(to bottom, var(--bg-primary),rgb(255, 255, 255));
+}
   /* header akhir */
 
   /* main */
+.main {
+  height: auto;
+  background: linear-gradient(to bottom, #fff, var(--bg-primary));
+  padding-bottom: 2em;
+}
 
+.main .col img {
+ width: 100%;
+}
+
+.main img {
+  scale: 85%;
+}
   /* main akhir */
 
   /* footer */
+  #logo img {
+    width: 2.2em;
+  }
+  #logo {
+    top: 1.35em;
+    margin-left: 6em;
+  }
+  .bg-logo {
+    background-color: #fff;
+    width: 12em;
+    height: 3em;
+    top: 1em;
+  }
+  .footer .card-body {
+    background: linear-gradient(to right, var(--bg-secondary), var(--bg-primary));
+  }
 
+  .footer .bi {
+    color: #000000;
+    font-size: 2em;
+  }
   /* footer akhir */
   
 
@@ -170,29 +201,35 @@
     /* navbar */
     .navbar {
       bottom: 0;
-      width: 100vw;
-      height: 5.5rem;
+      height: 5em;
+      overflow: hidden;
     }
   
     .logo {
+      top: .7em;
       position: relative;
-      top: 50%;
-      background:none;
-      width: 15%
+      background: none;
+      padding: 0;
+      margin: 0;
+      scale: 80%;
     }
   
+    .nav-link {
+      height: 6em;
+      position: relative;
+      bottom: 1em;
+    }
+
     .navbar-nav {
-      flex-direction: row;
-      width: 80%;
+      width: 16.5%;
     }
 
     .nav-item {
-      scale: 85%;
+      scale: 80%;
     }
   
     .nav-link {
       justify-content: center;
-      margin-top: -1.5em;
     }
     
   /* akhir navbar */
@@ -202,10 +239,16 @@
 /* header akhir */
 
   /* main */
-    main {
+    .main {
       margin: 0;
     }
-  
+  .teks-judul {
+    font-size: x-large;
+  }
+  .teks-narasi {
+    font-size: medium;
+  }
+
     .link-text {
       display: inline;
       position: absolute;
@@ -217,23 +260,42 @@
     }
 /* main akhir */
 
+/* footer */
+.bg-logo {
+  width: 7.5em;
+}
+#logo {
+margin-left: 1.5em;
+}
+.footer .card {
+font-size: smaller;
+}
+.footer .card-body {
+margin-bottom: 6em;
+}
+/* footer akhir */
 
   }
   
   /* Large screens */
   @media only screen and (min-width: 576px) {
+
+    .row .col {
+      margin-left: 2em;
+    }
+
     .navbar {
       top: 0;
       width: 5rem;
       height: 100vh;
     }
-  
-    .quiz {
-margin-left: 2.5em;
-    }
 
+/* navbar */
+    .navbar {
+      overflow: hidden;
+    }
     .navbar:hover {
-      width: 16rem;
+      width: 15rem;
     }
   
     .navbar:hover .link-text {
@@ -249,14 +311,13 @@ margin-left: 2.5em;
     {
       left: 0px;
     }
+    /* akhir navbar */
 /* header */
 
   /* header akhir */
 
   /* main */
-  .teks-narasi {
-      margin-left: 4em;
-    }
+  
     /* main akhir */
     
     /* footer */

@@ -144,16 +144,17 @@
   }
   /* header */
   .header {
-    height: 30vh;
-    background: linear-gradient(to bottom, #40A2E3, rgba(255, 255, 255, 0));
+    height: 50vh;
+    background: var(--bg-secondary);
   }
   /* header akhir */
 
   /* main */
 .main {
-  background-color: var(--bg-primary);
+  background: linear-gradient(to bottom, #fff, var(--bg-primary));
   height: auto;
 }
+
   /* main akhir */
 
   /* footer */
@@ -186,29 +187,35 @@
     /* navbar */
     .navbar {
       bottom: 0;
-      width: 100vw;
-      height: 5.5rem;
+      height: 5em;
+      overflow: hidden;
     }
   
     .logo {
+      top: .7em;
       position: relative;
-      top: 50%;
-      background:none;
-      width: 15%
+      background: none;
+      padding: 0;
+      margin: 0;
+      scale: 80%;
     }
   
-    .navbar-nav {
-      flex-direction: row;
-      width: 80%;
-    }
-  
-    .nav-item {
-      scale: 85%;
+    .nav-link {
+      height: 6em;
+      position: relative;
+      bottom: 1em;
     }
 
+    .navbar-nav {
+      width: 16.5%;
+    }
+
+    .nav-item {
+      scale: 80%;
+    }
+  
     .nav-link {
       justify-content: center;
-      margin-top: -1.5em;
     }
   /* akhir navbar */
 
@@ -230,7 +237,17 @@
     .teks-judul, .teks-narasi {
       padding: 0px 5px 0px 5px;
     }
+
+    .teks-judul {
+      font-size: x-large;
+    }
+    .teks-narasi {
+      font-size: medium;
+    }
+
+    
 /* akhir main */
+
     /* footer */
     .bg-logo {
       width: 7.5em;
@@ -245,9 +262,6 @@
   margin-bottom: 6em;
 }
 /* akhir footer */
-* {
-  font-size: small;
-}
   }
   
   /* Large screens */
@@ -256,10 +270,11 @@
       top: 0;
       width: 5rem;
       height: 100vh;
+      overflow: hidden;
     }
 
     .navbar:hover {
-      width: 16rem;
+      width: 15rem;
     }
   
     .navbar:hover .link-text {

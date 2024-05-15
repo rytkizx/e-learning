@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   --text-primary: #000000;
   --text-secondary: #969696;
   --bg-primary: #ffff;
@@ -16,7 +16,11 @@
 }
 
 .header {
-  background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+  background: linear-gradient(
+    to bottom,
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
   height: 100vh;
 }
 
@@ -27,7 +31,7 @@
 
 #text-header {
   color: var(--text-primary);
-} 
+}
 
 #explain {
   text-align: justify;
@@ -142,13 +146,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Body */
+body {
+  overflow-x: hidden;
+}
+
 .main {
-  background: linear-gradient(to bottom, #40A2E3, #fff);
+  background: linear-gradient(to bottom, #40a2e3, #fff);
   height: auto;
 }
 
 .wave path {
-  fill: #40A2E3;
+  fill: #40a2e3;
 }
 
 .wave {
@@ -177,7 +185,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2em;
   font-weight: bold;
   text-decoration: none;
-  background-color: #40A2E3;
+  background-color: #40a2e3;
   width: 130px;
 }
 
@@ -229,10 +237,11 @@ i {
 #alur {
   color: #ffffff;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  padding-top: 2em;
 }
 
 .img-alur img {
-  width: 80%;
+  width: 70%;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -252,45 +261,77 @@ i {
   top: 5.5em;
 }
 
+/* main */
+.profil {
+  margin-top: 6em;
+  height: auto;
+}
+.profil .foto-profil {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 4em;
+}
+
+#judul-profil {
+  text-shadow: 2px 3px 3px #000000;
+  color: #40a2e3;
+}
+
+.up-main {
+  background-color: #40a2e3;
+}
+
+#teks-tujuan {
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+/* main akhir */
+
 /* Small screens */
 @media only screen and (max-width: 576px) {
-  .header img{
+  .header img {
     visibility: hidden;
   }
 
   .header {
     height: auto;
   }
-.header .col-sm {
-  margin-top: 2em;
-}
-
+  .header .col-sm {
+    margin-top: 2em;
+  }
+  /* navbar */
   .navbar {
     bottom: 0;
-    width: 100vw;
-    height: 5.5rem;
+    height: 5em;
+    overflow: hidden;
   }
 
   .logo {
+    top: 0.7em;
     position: relative;
-    top: 50%;
-    background:none;
-    width: 15%;
+    background: none;
+    padding: 0;
+    margin: 0;
+    scale: 80%;
+  }
+
+  .nav-link {
+    height: 6em;
+    position: relative;
+    bottom: 1em;
   }
 
   .navbar-nav {
-    flex-direction: row;
-    width: auto;
+    width: 16.5%;
   }
 
   .nav-item {
-    scale: 85%;
+    scale: 80%;
   }
 
   .nav-link {
     justify-content: center;
-    margin-top: -1.5em;
   }
+  /* navbar akhir */
 
   .link-text {
     display: inline;
@@ -305,7 +346,7 @@ i {
   .teks-judul {
     font-size: 1.5em;
   }
-  
+
   .teks-narasi {
     font-size: 90%;
   }
@@ -314,7 +355,8 @@ i {
     width: 7.5em;
   }
 
-  .card, .card-title {
+  .card,
+  .card-title {
     font-size: small;
   }
 
@@ -340,6 +382,11 @@ i {
   #alamat {
     top: 7em;
   }
+
+  /* main */
+  .up-main {
+    height: auto;
+  }
 }
 
 /* Medium screens */
@@ -350,7 +397,7 @@ i {
   }
 
   #ornament {
-scale: 90%;
+    scale: 90%;
   }
 
   .teks-button {
@@ -362,17 +409,17 @@ scale: 90%;
   }
 }
 
-
 /* Large screens */
 @media only screen and (min-width: 576px) {
   .navbar {
     top: 0;
     width: 5rem;
     height: 100vh;
+    overflow: hidden;
   }
 
   .navbar:hover {
-    width: 16rem;
+    width: 15rem;
   }
 
   .navbar:hover .link-text {
@@ -387,7 +434,8 @@ scale: 90%;
     left: 0px;
   }
 
-  #logo-img, .row-main {
+  #logo-img,
+  .row-main {
     margin-left: 4.3rem;
   }
 
@@ -407,6 +455,24 @@ scale: 90%;
   #alamat {
     left: 5.5em;
   }
+  /* main */
+  .profil .row .col {
+    margin-left: 2em;
+  }
+
+  .profil {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-primary),
+      var(--bg-secondary)
+    );
+  }
+
+  .up-main .row {
+    margin-left: 4em;
+  }
+
+  /* main akhir */
 }
 
 /* Theme toggles */
